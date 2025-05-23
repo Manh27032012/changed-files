@@ -1,0 +1,11 @@
+local k = {"m", "y", "S", "u", "p", "e", "r", "S", "e", "c", "r", "e", "t", "K", "e", "y", "1", "2", "3"}
+local function decode(tbl)
+    local s = ""
+    for _, v in ipairs(tbl) do
+        s = s .. v
+    end
+    return s
+end
+getgenv().Key = decode(k)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
